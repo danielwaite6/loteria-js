@@ -14,7 +14,7 @@ export default class TratamentoDeNumerosRepetidosPeloUsuario{
             for(let j=i+1; j<=5;j++){
             
                 if( this.numerosEscolhidosPeloUsuario[i] ===  this.numerosEscolhidosPeloUsuario[j]){
-                    this.encontrouDuplicata = true
+                    this.encontrouDuplicata = true;
                     encontrouDuplicata();
                 }
             }

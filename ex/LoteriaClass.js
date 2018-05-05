@@ -11,7 +11,7 @@ export default class Loteria{
         }
         console.log(this.numerosSorteadosPeloSistema)
         imprimenaTela(this.numerosSorteadosPeloSistema)
-        //return this.numerosSorteadosPeloSistema
+        //return this.numerosSorteadosPeloSistema;
     }
 
 }

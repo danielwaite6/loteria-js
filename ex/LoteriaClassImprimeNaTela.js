@@ -7,7 +7,7 @@ export default class ImprimeNaTela{
 
 
     imprimenaTela(){
-        console.log('cheguei em imprimenaTela()') 
+        console.log('cheguei em imprimenaTela()'); 
         let MyLi_1 = document.getElementById("Myli-1");
         let MyLi_2 = document.getElementById("Myli-2");
         let MyLi_3 = document.getElementById("Myli-3");

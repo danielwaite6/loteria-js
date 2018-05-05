@@ -4,7 +4,7 @@ import Loteria from './LoteriaClass'
 Loteria
 
 function apostar(){
-    let numerosSorteadosPeloSistema = []
+    let numerosSorteadosPeloSistema = [];
     let numeros = [
         Number(document.getElementById('numero1').value),
         Number(document.getElementById('numero2').value),
