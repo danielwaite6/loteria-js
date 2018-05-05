@@ -1,0 +1,37 @@
+.alert {
+    padding: 40px 20px;
+}
+
+#loteria-form input[type=number] {
+    padding: 50px 20px;
+    font-size: 8pt;
+}
+
+#numerosSorteados ul, #numerosEscolhidos ul {
+    margin-left: -40px;
+    margin-top: 30px;
+}
+
+#numerosSorteados ul li, #numerosEscolhidos ul li {
+    float: left;
+    list-style-type: none;
+    padding: 20px 20px 20px 20px;
+    margin-right: 20px;
+    background-color: rgb(240,240,240);
+    border-radius: 70px;
+}
+
+#numerosSorteados ul li:hover, #numerosEscolhidos ul li:hover {
+    background-color: rgb(180,100,250);
+    color: #fff;
+    cursor: pointer;
+}
+
+section {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+button.btn {
+    padding: 10px 50px;
+}
