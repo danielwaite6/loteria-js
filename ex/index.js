@@ -1,7 +1,7 @@
 import TratamentoDeNumerosRepetidosPeloUsuario from './LoteriaClassObtemNums.js'
 import Loteria from './LoteriaClass'
+import VerificaAcertos from './LoteriaClassVerificaAcertos'
 
-Loteria
 
 function apostar(){
     let numerosSorteadosPeloSistema = [];
@@ -14,13 +14,17 @@ function apostar(){
         Number(document.getElementById('numero6').value)
     ]
     
-    new TratamentoDeNumerosRepetidosPeloUsuario(numeros).tratar();
-    new Loteria(numerosSorteadosPeloSistema).numerosSorteados();
-}   
 
+    const util1 = new TratamentoDeNumerosRepetidosPeloUsuario(numeros).tratar();
+    const util2 = new Loteria(numerosSorteadosPeloSistema).numerosSorteados();
+
+    new VerificaAcertos(util1, util2).verificaAcertos()
+}   
 
 var botao = document.getElementById("btn1");; 
 botao.addEventListener("click", apostar, false); 
+
+
 
 
 

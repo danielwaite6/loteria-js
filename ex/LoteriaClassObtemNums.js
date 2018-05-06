@@ -2,17 +2,17 @@ import ImprimeNaTela from './LoteriaClassImprimeNaTela'
 
 export default class TratamentoDeNumerosRepetidosPeloUsuario{
     
+
     constructor(numerosEscolhidosPeloUsuario){
        this.numerosEscolhidosPeloUsuario = numerosEscolhidosPeloUsuario
        this.encontrouDuplicata = false;
-     }
 
-    tratar(){//Função encontra duplicatas e avisa se 'encontrou duplicata'
+    }
 
+    tratar(nums) {//Função encontra duplicatas e avisa se 'encontrou duplicata'
+        //this.numerosEscolhidosPeloUsuario[i] ===  this.numerosEscolhidosPeloUsuario[j]
         for(let i=0; i<=4 ;i++){
-            //console.log('i: '+ i)
             for(let j=i+1; j<=5;j++){
-            
                 if( this.numerosEscolhidosPeloUsuario[i] ===  this.numerosEscolhidosPeloUsuario[j]){
                     this.encontrouDuplicata = true;
                     encontrouDuplicata();
@@ -22,11 +22,17 @@ export default class TratamentoDeNumerosRepetidosPeloUsuario{
         
         if(!this.encontrouDuplicata){
             new ImprimeNaTela(this.numerosEscolhidosPeloUsuario).imprimenaTela();
+            return this.numerosEscolhidosPeloUsuario 
         }
     }
- 
+    
+
+    
     
 }
+
+
+
 
 function encontrouDuplicata(){
     console.log('cheguei em encontrouDuplicata()') 

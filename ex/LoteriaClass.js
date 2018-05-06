@@ -3,15 +3,17 @@ export default class Loteria{
         this.numerosSorteadosPeloSistema = numerosSorteadosPeloSistema
     }
 
+    
+    
+
     numerosSorteados() {
         while (this.numerosSorteadosPeloSistema.length < 6) {
             let aleatorio = Math.floor (Math.random() * 60)
             if (this.numerosSorteadosPeloSistema.indexOf(aleatorio) == -1)
             this.numerosSorteadosPeloSistema.push(aleatorio)
         }
-        console.log(this.numerosSorteadosPeloSistema)
         imprimenaTela(this.numerosSorteadosPeloSistema)
-        //return this.numerosSorteadosPeloSistema;
+        return this.numerosSorteadosPeloSistema
     }
 
 }
@@ -19,7 +21,7 @@ export default class Loteria{
 
 
 function imprimenaTela(nums){
-    console.log('cheguei em imprimenaTela() da LoteriaClassl.js') 
+    
     let MyLi_1 = document.getElementById("Myli-7");
     let MyLi_2 = document.getElementById("Myli-8");
     let MyLi_3 = document.getElementById("Myli-9");
