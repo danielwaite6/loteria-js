@@ -1,4 +1,4 @@
-export default class VerficaAcertos{
+export default class VerificaAcertos{
 
     constructor(numerosEscolhidosPeloUsuario, numerosSorteadosPeloSistema){
         this.numerosEscolhidosPeloUsuario = numerosEscolhidosPeloUsuario
