@@ -5,7 +5,7 @@
  * 3) compara os dois Arrays
  * 4) Verifica se ganhou com uma função que retorne boolean
  * 5) Se o cara ganhou ou não, adicione uma classe a div #ganhou de alert-danger < 3 - alert-warning >3 e < 6 - alert-success se for === 6
- * 6) Exiba os numeros do usuarios e também exiba os números escolhidos pela máquina
+ * 6) Exiba os numeros do usuarios e também exiba os números escolhidos pela máquina.
  *
 */
 
